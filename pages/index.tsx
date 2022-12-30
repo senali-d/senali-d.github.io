@@ -15,29 +15,29 @@ export default function Home() {
       <>
         <div className="h-[100vh] overflow-x-hidden">
           <Header />
-          <div className="p-5 sm:p-16 lg:p-0 max-w-[1200px] mx-auto h-[100vh] flex justify-center flex-row items-center">
-            <div className="mt-[80px] p-5 sm:p-0 w-full absolute sm:relative md:w-1/3 lg:w-2/4 z-10">
+          <div className="p-5 max-w-[1200px] mx-auto h-[100vh] flex justify-center flex-col md:flex-row items-center">
+            <div className="mt-[80px] w-full sm:relative md:w-2/3 z-10">
               <p className="text-lg text-[#64ffda] font-bold pb-5">
                 Hi, my name is
               </p>
-              <h1 className="text-6xl sm:text-8xl text-[#ccd6f6] font-bold">
+              <h1 className="text-5xl sm:text-8xl text-[#ccd6f6] font-bold">
                 Senali Dilumika.
               </h1>
-              <p className="text-xl text-[#8892b0] pt-4">Bridging the gap between design and technology</p>
+              <p className="text-xl text-[#8892b0] pt-4 pb-5 md:pb-0">Bridging the gap between design and technology</p>
             </div>
-            <div className="mt-[80px] relative left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda] rounded-full">
-              <Image width={500} height={500} src="/home-banner.svg" className="bg-[#112240] rounded-full p-3" alt="Senali" />
+            <div className="hidden md:flex md:mt-[80px] left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda] rounded-full">
+              <Image width={400} height={400} src="/home-banner.svg" className="bg-[#112240] rounded-full p-3" alt="Senali" />
             </div>
           </div>
         </div>
         {/* About Us */}
         <div id="about"></div>
-        <div className="mt-20 p-5 sm:p-16 lg:p-0 max-w-[1200px] mx-auto flex justify-center flex-row">
-          <div className="relative left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda] rounded-full">
+        <div className="md:mt-20 p-5 max-w-[1200px] mx-auto flex justify-center flex-col md:flex-row">
+          <div className="flex w-fit m-auto md:ml-0 left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda] rounded-full order-1 md:order-none">
             <Image width="400" height="400" src="/about-me.png" className="bg-[#112240] rounded-full p-3" alt="Senali" />
           </div>
-          <div className="ml-10 p-5 sm:p-0 w-full absolute sm:relative md:w-1/3 lg:w-2/4">
-            <h2 className="text-4xl sm:text-6xl text-[#ccd6f6] font-bold">
+          <div className="w-full pb-10 md:pb-0 md:pl-5 md:w-2/3 order-0 md:order-none">
+            <h2 className="text-4xl text-center md:text-left sm:text-6xl text-[#ccd6f6] font-bold">
               About Me.
             </h2>
             <p className="text-lg text-[#8892b0] pt-4">
@@ -54,14 +54,14 @@ export default function Home() {
         </div>
         {/* Work */}
         <div id="work"></div>
-        <div className="mt-20 p-5 sm:p-16 lg:p-0 max-w-[1200px] mx-auto flex justify-center flex-col">
-          <div className="p-5 sm:px-16 w-full absolute sm:relative">
-            <h2 className="text-4xl sm:text-6xl text-[#ccd6f6] font-bold">
+        <div className="lg:mt-20 max-w-[1200px] mx-auto p-5 flex justify-center flex-col">
+          <div className="w-full">
+            <h2 className="text-4xl text-center md:text-left sm:text-6xl text-[#ccd6f6] font-bold">
               My Works.
             </h2>
           </div>
-          <div className="pb-8 flex justify-between flex-row">
-            <div className="p-5 sm:px-16 w-full absolute sm:relative md:w-1/3 lg:w-2/4">
+          <div className="flex justify-between flex-col md:flex-row pt-10">
+            <div className="w-full pb-10 md:pb-0 md:pr-5 md:w-2/3">
               <h3 className="text-xl sm:text-3xl text-[#ccd6f6] font-bold">
                 Travel Mate.
               </h3>
@@ -71,11 +71,11 @@ export default function Home() {
                 <br/>
                 Projects focus on building web applications for travel community, to build a community for travelers, travel enthusiasts and show the beauty of the world.
               </p>
-              <div className="text-[#64ffda] pt-8">
-                <span className="text-sm border border-[#64ffda] px-4 py-1 rounded-2xl mr-2">React</span>
-                <span className="text-sm border border-[#64ffda] px-4 py-1 rounded-2xl mr-2">Graphql</span>
-                <span className="text-sm border border-[#64ffda] px-4 py-1 rounded-2xl mr-2">Postgresql</span>
-                <span className="text-sm border border-[#64ffda] px-4 py-1 rounded-2xl">Tailwind css</span>
+              <div className="text-[#64ffda] flex flex-wrap pt-8">
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">React</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Graphql</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Postgresql</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl">Tailwind css</span>
               </div>
               <div className="pt-5 flex">
                 <Link href="https://github.com/senali-d/travel-mate" target="_blank">
@@ -86,15 +86,15 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="relative h-[100%] m-5 mx-16 left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda]">
+            <div className="w-fit h-[100%] mx-auto md:mr-0 left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda]">
               <Image width="500" height="500" src="/travel-mate.png" className="bg-[#112240] p-3" alt="Senali" />
             </div>
           </div>
-          <div className="pb-8 flex justify-between flex-row">
-            <div className="relative h-[100%] m-5 mx-16 left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda]">
+          <div className="flex justify-between flex-col md:flex-row pt-10">
+            <div className="w-fit h-[100%] mx-auto md:ml-0 left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda] order-1 md:order-none">
               <Image width="500" height="500" src="/tesla-clone.png" className="bg-[#112240] p-3" alt="Senali" />
             </div>
-            <div className="p-5 sm:px-16 w-full absolute sm:relative md:w-1/3 lg:w-2/4">
+            <div className="w-full pb-10 md:pb-0 md:pl-5 md:w-2/3 order-0 md:order-none">
               <h3 className="text-xl sm:text-3xl text-[#ccd6f6] font-bold">
                 Tesla Clone.
               </h3>
@@ -102,10 +102,10 @@ export default function Home() {
                 This project was clone of the ui of tesla web site. 
                 <br/>
               </p>
-              <div className="text-[#64ffda] pt-8">
-                <span className="text-sm border border-[#64ffda] px-4 py-1 rounded-2xl mr-2">React</span>
-                <span className="text-sm border border-[#64ffda] px-4 py-1 rounded-2xl mr-2">Styled Components</span>
-                <span className="text-sm border border-[#64ffda] px-4 py-1 rounded-2xl">MUI</span>
+              <div className="text-[#64ffda] flex flex-wrap pt-8">
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">React</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Styled Components</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl">MUI</span>
               </div>
               <div className="pt-5 flex">
                 <Link href="https://github.com/senali-d/tesla-clone" target="_blank">
@@ -118,11 +118,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* About Us */}
+        {/* Contact */}
         <div id="contact"></div>
-        <div className="mt-20 p-5 sm:p-16 lg:p-0 max-w-[1200px] mx-auto flex justify-start flex-row">
-          <div className="p-5 sm:px-16 w-full absolute sm:relative md:w-1/3 lg:w-2/4">
-            <h2 className="text-4xl sm:text-6xl text-[#ccd6f6] font-bold">
+        <div className="md:mt-5 lg:mt-20 max-w-[1200px] mx-auto p-5 flex justify-start flex-col md:flex-row">
+          <div className="w-full md:pr-5 md:w-2/3">
+            <h2 className="text-4xl text-center md:text-left sm:text-6xl text-[#ccd6f6] font-bold">
               Get In Touch
             </h2>
             <p className="text-lg text-[#8892b0] pt-4">
@@ -141,13 +141,13 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative left-[50vw] sm:left-0 bg-slate-100 border-2 rounded-full border-[#64ffda]">
+          <div className="w-fit m-auto md:mr-0 left-[50vw] sm:left-0 bg-slate-100 border-2 rounded-full border-[#64ffda]">
             <Image width="400" height="400" src="/contacts.png" className="bg-[#112240] rounded-full p-3" alt="Senali" />
           </div>
         </div>
         {/* Footer */}
-        <div className="mt-20 p-5 sm:p-16 lg:p-0 max-w-[1200px] mx-auto flex justify-start flex-row">
-          <div className="p-5 sm:px-16 w-full absolute sm:relative text-center">
+        <div className="max-w-[1200px] mx-auto p-5 flex">
+          <div className="w-full text-center">
             <p className="text-sm text-[#8892b0] hover:text-[#64ffda] pt-4">
               Designed & Built by Senali Dilumika
             </p>
