@@ -49,9 +49,6 @@ export default function Home() {
               <br/>
               <br/>
               Aside from my job, I like to create and contribute to open source projects. That helps me to learn a ton of new stuff, grow as a developer and support others.
-              <br/>
-              <br/>
-              Thank you for visiting my website.
             </p>
           </div>
         </div>
@@ -129,11 +126,11 @@ export default function Home() {
               Get In Touch
             </h2>
             <p className="text-lg text-[#8892b0] pt-4">
-              Whether you want to connect, or just want to say hello, we want to hear from you.
+              Whether you want to connect, or just want to say hello, I want to hear from you.
               <br/>
               <br/>
-              You can contact me by reaching out to us through one of the social media channels listed below. 
-              I will do our best to respond to your message as soon as possible.
+              You can contact me by reaching out to me through one of the social media channels listed below. 
+              I will do my best to respond to your message as soon as possible.
             </p>
             <div className="pt-10 flex">
               <Link href="https://github.com/senali-d" target="_blank">
