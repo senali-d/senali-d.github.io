@@ -45,7 +45,7 @@ export default function Home() {
               I began my tech career in 2019 and have since gained experience in a variety of technologies, including Typescript, JavaScript, React, WordPress, NextJS, Node, and Python.
               <br/>
               <br/>
-              I am always looking to expand my skills and knowledge, and am currently interested in exploring the more about python.
+              I am always looking to expand my skills and knowledge, and I am currently interested in exploring the more about python.
               <br/>
               <br/>
               Aside from my job, I like to create and contribute to open source projects. That helps me to learn a ton of new stuff, grow as a developer and support others.
