@@ -60,6 +60,71 @@ export default function Home() {
               My Works.
             </h2>
           </div>
+
+          <div className="flex justify-between flex-col md:flex-row pt-10">
+            <div className="w-full pb-10 md:pb-0 md:pr-5 md:w-2/3">
+              <h3 className="text-xl sm:text-3xl text-[#ccd6f6] font-bold">
+                FitChain.
+              </h3>
+              <p className="text-lg text-[#8892b0] pt-4">
+                This project was completed as part of the a Major League Hacking (MLH) Hackerthon. 
+                <br/>
+                Experience fitness and wellness like never before with FitChain!
+                This decentralized application makes setting and achieving your weekly goals not only fun, but also rewarding. 
+                As you reach your goals, you will be able to unlock cool and unique NFTs as a reward for your hard work.
+              </p>
+              <div className="text-[#64ffda] flex flex-wrap pt-8">
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Nextjs</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Typescript</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Solidity</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Thirdweb</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl">Connectkit</span>
+              </div>
+              <div className="pt-5 flex">
+                <Link href="https://github.com/neel-ds/fitChain" target="_blank">
+                  <FiGithub color="#64ffda" size="20" className="mr-2" />
+                </Link>
+                <Link href="https://fitchain.vercel.app" target="_blank">
+                  <FiExternalLink color="#64ffda" size="20" />
+                </Link>
+              </div>
+            </div>
+            <div className="w-fit h-[100%] mx-auto md:mr-0 left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda]">
+              <Image width="500" height="500" src="/fit-chain.jpg" className="bg-[#112240] p-3" alt="Senali" />
+            </div>
+          </div>
+          <div className="flex justify-between flex-col md:flex-row pt-10">
+            <div className="w-fit h-[100%] mx-auto md:ml-0 left-[50vw] sm:left-0 bg-slate-100 border-2 border-[#64ffda] order-1 md:order-none">
+              <Image width="500" height="500" src="/log-chain.png" className="bg-[#112240] p-3" alt="Senali" />
+            </div>
+            <div className="w-full pb-10 md:pb-0 md:pl-5 md:w-2/3 order-0 md:order-none">
+              <h3 className="text-xl sm:text-3xl text-[#ccd6f6] font-bold">
+                LogChain.
+              </h3>
+              <p className="text-lg text-[#8892b0] pt-4">
+                This project was completed as part of the a SheBuilds Hackerthon. 
+                <br/>
+                LogChain is a decentralized provenance application that tracks the ownership and movement of a product or asset through its life cycle. 
+                It records each event or transaction that occurs, creating an immutable record of the history of the product or asset.
+              </p>
+              <div className="text-[#64ffda] flex flex-wrap pt-8">
+              <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Nextjs</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Typescript</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Tailwind CSS</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Solidity</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl mr-2">Polygon</span>
+                <span className="text-sm border border-[#64ffda] mb-3 sm:mb-0 px-4 py-1 rounded-2xl">Connectkit</span>
+              </div>
+              <div className="pt-5 flex">
+                <Link href="https://github.com/vrajdesai78/LogChain" target="_blank">
+                  <FiGithub color="#64ffda" size="20" className="mr-2" />
+                </Link>
+                <Link href="https://log-chain.vercel.app" target="_blank">
+                  <FiExternalLink color="#64ffda" size="20" />
+                </Link>
+              </div>
+            </div>
+          </div>
           <div className="flex justify-between flex-col md:flex-row pt-10">
             <div className="w-full pb-10 md:pb-0 md:pr-5 md:w-2/3">
               <h3 className="text-xl sm:text-3xl text-[#ccd6f6] font-bold">
