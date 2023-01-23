@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../components/commin/header'
+import Header from '../components/common/header'
 import { FiGithub, FiExternalLink, FiTwitter } from 'react-icons/fi'
 import Link from 'next/link'
 
