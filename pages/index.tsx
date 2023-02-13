@@ -42,8 +42,8 @@ const projectData = [
     descTwo: "",
     image: "/tesla-clone.png",
     techs: ["React","Styled Components", "MUI"],
-    repoLink: "https://github.com/senali-d/travel-mate",
-    appLink: "https://travel-mate-tau.vercel.app",
+    repoLink: "https://github.com/senali-d/tesla-clone",
+    appLink: "https://tesla-clone-alpha-six.vercel.app",
     order: 'desc'
   }
 ]
