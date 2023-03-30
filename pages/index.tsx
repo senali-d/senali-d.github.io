@@ -6,6 +6,16 @@ import Link from 'next/link'
 import Project from '../components/project'
 
 const projectData = [
+    {
+    title: "Coinverse.",
+    descOne: "This project was completed as part of the a EathGlobal Hackerthon.",
+    descTwo: "It provides an interactive no-code platform that allows users to create a community token and NFT memberships. Coinverse supports a unique niche of the 5ire chain which enables sustainability and empowers creators to build thriving web3 communities.",
+    image: "/coinverse.png",
+    techs: ["Nextjs","Javascript", "Tailwind CSS", "Solidity", "Connectkit"],
+    repoLink: "https://github.com/senali-d/coinverse",
+    appLink: "https://coinverse-5ire.vercel.app/",
+    order: "desc"
+  },
   {
     title: "FitChain.",
     descOne: "This project was completed as part of the a Major League Hacking (MLH) Hackerthon.",
